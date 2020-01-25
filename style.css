@@ -1,0 +1,66 @@
+body{background-color:#4682B4;}
+
+h1,h2,h3{font-family:Tahoma;}
+
+section{background-color:#FFFFFF;
+font-family:Arial;
+padding:10px;
+}
+
+footer{background-color:#000000;
+color:#FFFFFF;
+font-family:Tahoma;
+font-size:12px;
+text-align:center;
+padding:2px;} /*Esse padding ta definindo tamanho do footer*/
+
+img,video{max-width:100%;} /*Esse código fará com que as imagens e vídeos automaticamente diminua a imagem, quando a resolução
+			     do navegador diminuir*/
+
+nav{background-color:#000000;
+height:45px; /*Controlando a altura do menu*/
+font-family:Tahoma;
+font-weight:bold; /*Estilizando a fonte em negrito*/
+font-size:14px;}
+
+/*Sem a virgula indica o caminho, ou seja, essa lista UL está dentro da tag nav*/
+
+nav ul{height:auto;
+padding:15px 0px;
+margin:0px;}
+
+/*Estilizando as linhas, retirando os pontos e colocando na horinzontal usando o displau inline.*/
+
+nav li{display:inline;
+padding:10px;
+margin:0px;}
+
+/* Estilizando os links, retirando as linhas, mudando a cor da fonte
+e o posicionamento*/
+
+nav a{text-decoration:none;
+color:#FFFFFF;
+padding:8px 8px 8px 8px;}
+
+/*Estilizando a aparência do link quando o mouse esta em cima (hover),
+criando um efeito animado ao passar o mouse*/
+
+nav a:hover{
+color:#000000;
+background-color:#FFFFFF;}
+
+/*Media query são usados para criar mudanças no layout através de condições*/
+
+/*Definindo que a página só pode ser "esticada" até a resolução 960px e alinhando ela no centro*/
+
+@media all and (min-width:960px){
+body{width:960px;
+margin:auto;}
+}
+
+@media all and (max-width:480px){
+nav{height:100%;}
+nav li{display:block;
+padding:10px;
+margin:0px;}
+}
